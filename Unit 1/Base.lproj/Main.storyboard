@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="umP-YV-Ipo">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Unit_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Dg6-a3-1hW">
+                                <rect key="frame" x="26" y="129" width="341" height="663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="aFd-Qs-nnC" userLabel="Image Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="341" height="331.66666666666669"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="captain america" translatesAutoresizingMaskIntoConstraints="NO" id="EQl-dm-Wub">
+                                                <rect key="frame" x="0.0" y="0.0" width="341" height="331.66666666666669"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ypT-te-v77" userLabel="Button Stack View">
+                                        <rect key="frame" x="0.0" y="331.66666666666674" width="341" height="331.33333333333326"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLD-ii-cnb">
+                                                <rect key="frame" x="0.0" y="0.0" width="341" height="95.333333333333329"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Origin Story"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="85N-eJ-uV5" appends="YES" id="qDP-7L-vnZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E6-ga-mau">
+                                                <rect key="frame" x="0.0" y="103.33333333333331" width="341" height="95.666666666666686"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Main Villain"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="tid-nv-N32" appends="YES" id="SRk-3P-0z4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acl-SU-LtM">
+                                                <rect key="frame" x="0.0" y="206.99999999999997" width="341" height="124.33333333333334"/>
+                                                <gestureRecognizers/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="City he/she is from"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="4go-Io-5DA" appends="YES" id="RFD-sM-b3L"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="Dg6-a3-1hW" secondAttribute="bottom" constant="26" id="18p-V7-SE1"/>
+                            <constraint firstItem="Dg6-a3-1hW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="26" id="L33-dv-jKj"/>
+                            <constraint firstAttribute="trailing" secondItem="Dg6-a3-1hW" secondAttribute="trailing" constant="26" id="UhW-AI-1po"/>
+                            <constraint firstItem="Dg6-a3-1hW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="26" id="h9q-sD-U0u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Profile" id="pwc-2n-tqG"/>
+                    <connections>
+                        <segue destination="SIY-St-FM8" kind="show" identifier="detailSegue" id="bZb-Ky-tDj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="85N-eJ-uV5">
+                    <connections>
+                        <action selector="didTapDetail:" destination="BYZ-38-t0r" id="nht-5M-hLc"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tid-nv-N32">
+                    <connections>
+                        <action selector="didTapDetail:" destination="BYZ-38-t0r" id="rhZ-LN-Vgv"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="4go-Io-5DA">
+                    <connections>
+                        <action selector="didTapDetail:" destination="BYZ-38-t0r" id="pZt-ic-IfV"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="927.48091603053433" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="5RA-Kl-biR">
+            <objects>
+                <viewController id="SIY-St-FM8" customClass="DetailViewController" customModule="Unit_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rrG-Tf-59J">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="TU7-7z-MHF" userLabel="Main Stack View">
+                                <rect key="frame" x="26" y="129" width="341" height="663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="AoE-Vl-nnx" userLabel="Heading Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="341" height="329.66666666666669"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FH0-YB-nlx">
+                                                <rect key="frame" x="150" y="0.0" width="41.333333333333343" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="ooR-JD-wYY">
+                                                <rect key="frame" x="0.0" y="29.333333333333343" width="341" height="300.33333333333326"/>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9g2-X1-Mpr" userLabel="Text Stack View">
+                                        <rect key="frame" x="0.0" y="333.66666666666674" width="341" height="329.33333333333326"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zZ1-5h-tYc">
+                                                <rect key="frame" x="0.0" y="0.0" width="341" height="329.33333333333331"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vhg-l5-tI0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TU7-7z-MHF" firstAttribute="leading" secondItem="vhg-l5-tI0" secondAttribute="leading" constant="26" id="BBU-c6-slK"/>
+                            <constraint firstItem="TU7-7z-MHF" firstAttribute="top" secondItem="vhg-l5-tI0" secondAttribute="top" constant="26" id="bPQ-AX-k1J"/>
+                            <constraint firstItem="vhg-l5-tI0" firstAttribute="bottom" secondItem="TU7-7z-MHF" secondAttribute="bottom" constant="26" id="cpc-nt-bWm"/>
+                            <constraint firstItem="vhg-l5-tI0" firstAttribute="trailing" secondItem="TU7-7z-MHF" secondAttribute="trailing" constant="26" id="gaI-iC-fPN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="3qQ-pl-Ib5"/>
+                    <connections>
+                        <outlet property="contextLabel" destination="zZ1-5h-tYc" id="48K-5s-lDH"/>
+                        <outlet property="imageView" destination="ooR-JD-wYY" id="LHT-Dr-FmV"/>
+                        <outlet property="titleLabel" destination="FH0-YB-nlx" id="0o1-Ot-Xav"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3lu-ID-vem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1764.0845070422536" y="0.76335877862595414"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ObV-j3-TFH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="umP-YV-Ipo" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jat-yN-MfV">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ho9-ax-vFv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIi-pR-woK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.5267175572519" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="captain america" width="284" height="177"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
